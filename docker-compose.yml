@@ -14,17 +14,18 @@ services:
     deploy:
       replicas: 3
 
-  dth:
-    images: preetham312/paydth:latest
-    ports:
+    dth:
+      images: preetham312/paydth:latest
+      ports:
       - "83:80"
-    deploy:
-      replicas: 3
+      deploy:
+        replicas: 3
 
 
-  recharge:
-    images: preetham312/patrecharge:latest
-    ports:
-      - "84:80"
-    deploy:
-      replicas: 3
+    recharge:
+      images: preetham312/patrecharge:latest
+      ports:
+        - "84:80"
+      deploy:
+        replicas: 3
+
