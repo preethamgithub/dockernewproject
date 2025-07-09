@@ -4,7 +4,7 @@ services:
     image: preetham312/paymovies:latest
     ports:
       - "81:80"
-    depoly:
+    deploy:
       replicas: 3
 
   train:
