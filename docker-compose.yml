@@ -1,25 +1,29 @@
 version: '3.8'
 services:
   movies:
-    image: hpakala53/paytmmovies:latest
+    image: preetham312/paymovies:latest
     ports:
       - "81:80"
-    deploy:
+    depoly:
       replicas: 3
+
   train:
-    image: hpakala53/paytmtrain:latest
+    image: preetham312/paytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
+
   dth:
-    image: hpakala53/paytmdth:latest
+    images: preetham312/paydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
+
+
   recharge:
-    image: hpakala53/paytmrecharge:latest
+    images: preetham312/patrecharge:latest
     ports:
       - "84:80"
     deploy:
